@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  @author Fausto Jesús De La Cruz Caminero <fdelacruz@aviamltd.com>
+-->
+<odoo>
+    <record id="views_parner_name" model="ir.ui.view">
+            <field name="name">res.partner.mail.template</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+		<xpath expr="//notebook" position="inside">
+        <page name='mail_partner' string="Mail Template">
+        <group>
+        <field name="partner_name_template_ids">
+                                    <tree>
+                                        <field name="mail_template_id"/>
+                                        <field name="partner_id"/>
+                                        <field name="move_type"/>
+                                    </tree>
+                                </field> 
+        </group>
+        </page>
+        </xpath> 
+            </field>
+        </record>
+</odoo>

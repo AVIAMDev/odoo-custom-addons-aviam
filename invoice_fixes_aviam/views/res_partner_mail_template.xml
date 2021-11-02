@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  @author Fausto Jesús De La Cruz Caminero <fdelacruz@aviamltd.com>
+-->
+<odoo>
+<record id="view_partner_mail_template" model="ir.ui.view">
+            <field name="name">res.partner.mail.template.form</field>
+            <field name="model">partner.mail.template</field>
+            <field name="arch" type="xml">
+                <form string="Partner Mail Template">
+                    <sheet>
+                        <group col="4">
+                            <field name="mail_template_id"/>
+                            <field name="move_type"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record> 
+        </odoo>
